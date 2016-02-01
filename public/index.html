@@ -11,7 +11,7 @@
 		if(isNumber)
 			var userInput = document.getElementById("equa").value;
 		else
-	  	  	var userInput = eval('(function() {' + document.getElementById("equa").value + '}())');
+	  	  	var userInput = ('(function() {' + document.getElementById("equa").value + '}())');
 		
       var url = "./eval?code=" + encodeURIComponent(userInput);
       	console.log(url);
